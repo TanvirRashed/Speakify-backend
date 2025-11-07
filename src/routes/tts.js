@@ -4,7 +4,7 @@ import authenticate from '../middleware/auth.js';
 
 const router = express.Router();
 
-router.get('/voices', authenticate, getVoices);
+router.get('/voices', getVoices);
 router.post('/convert', authenticate, convertTextToSpeech);
 
 export default router;
